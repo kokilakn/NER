@@ -1,0 +1,8 @@
+requests
+flask
+spacy
+contractions
+unidecode
+emoji
+google_trans_new
+textblob
