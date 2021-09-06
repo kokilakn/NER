@@ -8,7 +8,7 @@ nlp = spacy.load('en_core_web_sm')
 
 def normalization(sentence,tokenize=True):
 	textBlb = TextBlob(sentence)
-    textCorrected = textBlb.correct()
+	textCorrected = textBlb.correct()
     sentence = html.unescape(sentence)
     regex = re.compile(r'[\n\r\t]')
     sentence = regex.sub(" ", sentence)
